@@ -2,7 +2,7 @@
 Get an email when slack users in your workspace are deactivated.
 
 ## Installation
-`pip3 install sendgrid`
+`pipenv install`
 
 ## Command line parameters
 `SLACK_API_TOKEN`: Login at https://app.slack.com and inspect the API calls to get this value.
@@ -16,4 +16,4 @@ Get an email when slack users in your workspace are deactivated.
 `TO_EMAIL`: name@domain.com
 
 ## Run
-`SLACK_API_TOKEN=x SLACK_D_COOKIE=y SENDGRID_API_KEY=z FROM_EMAIL=name@domain.com TO_EMAIL=name@domain.com python3 deactivated-slack-users.py`
+`SLACK_API_TOKEN=x SLACK_D_COOKIE=y SENDGRID_API_KEY=z FROM_EMAIL=name@domain.com TO_EMAIL=name@domain.com pipenv run python3 deactivated-slack-users.py`
